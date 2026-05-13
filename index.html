@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prabhakar Lab</title>
+    <title></title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -17,10 +16,10 @@
     <div class="page-container">
 
         <div class="navbar">
-            <a href="#">Home</a>
+            <a href="#" class="active">Home</a>
 
             <div class="dropdown">
-                <a href="#">Projects</a>
+                <a href="#" class="nav-item has-dropdown">Projects</a>
                 <div class="dropdown-content">
                     <a href="#">TISHUMAP</a>
                     <a href="#">AIDA</a>
@@ -31,7 +30,7 @@
             </div>
 
             <div class="dropdown">
-                <a href="#">Resources</a>
+                <a href="#" class="nav-item has-dropdown">Resources</a>
                 <div class="dropdown-content">
                     <a href="#">Software</a>
                     <a href="#">S2GP Platform</a>
@@ -47,32 +46,91 @@
             <a href="#">Join Us!</a>
         </div>
 
-        <section class="hero-intro">
+        <section class="lab-header">
             <h1>Shyam Prabhakar Lab</h1>
             <p>Laboratory of Systems Biology and Data Analytics</p>
         </section>
 
-        <section class="research-panel">
+        <section class="research-summary">
             <div class="research-card">
-                <h2>We study spatial biology to understand human disease.</h2>
+
+                <h2>We Leverage Single-Cell and Spatial Omics<br>to Understand Human Disease</h2>
+
                 <p>
-                    Integrating spatial omics, computational biology and machine learning
-                    to decode the organisation of cells in health and disease.
+                    Our lab is an interdisciplinary team that combines single-cell and spatial omics
+                    technologies with<br>computational and algorithmic approaches to study the mechanisms
+                    underlying human disease.<br>We work closely with clinicians and domain experts to
+                    pursue ambitious, team-driven research goals,<br>while fostering a flexible and
+                    supportive environment for scientific and professional growth.
                 </p>
 
-                <div class="tags">
-                    <span>Spatial Omics</span>
-                    <span>Computational Biology</span>
-                    <span>Machine Learning</span>
+                <div class="cta-buttons">
+                    <a href="#" class="primary-button">Explore Projects</a>
+                    <a href="#" class="secondary-button">Meet the Gang</a>
                 </div>
+
             </div>
         </section>
 
     </div>
 
+
+
     <div class="filler"></div>
-    
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- Intro -->
+            <h3 class="footer-intro">
+                We welcome questions, collaborations, and new ideas, so please get in touch with us!
+            </h3>
+
+            <div class="footer-spacer"></div>
+
+            <!-- Contact row -->
+            <div class="footer-info">
+
+                <div class="footer-item">
+                    <img src="icons/location.png" class="icon" alt="address icon">
+                    60 Biopolis Street, Genome, #03-01, Singapore 138672
+                </div>
+
+                <span class="divider">|</span>
+
+                <div class="footer-item">
+                    <img src="icons/email.png" class="icon" alt="email icon">
+                    shyam_lab@a-star.edu.sg
+                </div>
+
+                <span class="divider">|</span>
+
+                <div class="footer-item">
+                    <img src="icons/phone.png" class="icon" alt="phone icon">
+                    +65 6808 8046
+                </div>
+
+            </div>
+
+            <div class="footer-spacer"></div>
+
+            <!-- Divider line -->
+            <div class="footer-line"></div>
+
+            <!-- Copyright -->
+            <p class="footer-copy">
+                © 2026 by Shyam Prabhakar Lab
+            </p>
+
+        </div>
+
+    </footer>
+
     <script>
+        const pageName = "Home";
+        document.title = `${pageName} | SP Lab`;
+
         const navbar = document.querySelector('.navbar');
         let lastY = window.scrollY;
         let accumulated = 0;
@@ -84,11 +142,11 @@
             if (accumulated > 180) {
                 navbar.style.opacity = '0';
                 navbar.style.pointerEvents = 'none';
-                accumulated = 0;
+                accumulated = 180;
             } else if (accumulated < -180) {
                 navbar.style.opacity = '1';
                 navbar.style.pointerEvents = '';
-                accumulated = 0;
+                accumulated = -180;
             }
         });
     </script>
