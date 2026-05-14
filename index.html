@@ -72,42 +72,61 @@
             </div>
         </section>
 
+        <section class="gallery-section">
+
+            <div class="section-divider">
+                <span class="divider-line"></span>
+
+                <h2>Gallery</h2>
+
+                <span class="divider-line"></span>
+            </div>
+
+            <div class="gallery-container">
+
+                <button class="gallery-arrow left-arrow" aria-label="Previous image"></button>
+
+                <div class="gallery-frame">
+                    <img class="gallery-image" alt="Gallery image">
+                    <div class="gallery-caption"></div>
+                </div>
+
+                <button class="gallery-arrow right-arrow" aria-label="Next image"></button>
+
+            </div>
+
+        </section>
+
     </div>
-
-
 
     <div class="filler"></div>
 
     <footer class="site-footer">
 
         <div class="footer-container">
-
-            <!-- Intro -->
             <h3 class="footer-intro">
                 We welcome questions, collaborations, and new ideas, so please get in touch with us!
             </h3>
 
             <div class="footer-spacer"></div>
 
-            <!-- Contact row -->
             <div class="footer-info">
-
                 <div class="footer-item">
-                    <img src="icons/location.png" class="icon" alt="address icon">
+                    <img src="images/icons/location.svg" class="icon icon-location" alt="address icon">
                     60 Biopolis Street, Genome, #03-01, Singapore 138672
                 </div>
 
                 <span class="divider">|</span>
 
                 <div class="footer-item">
-                    <img src="icons/email.png" class="icon" alt="email icon">
+                    <img src="images/icons/email.svg" class="icon" alt="email icon">
                     shyam_lab@a-star.edu.sg
                 </div>
 
                 <span class="divider">|</span>
 
                 <div class="footer-item">
-                    <img src="icons/phone.png" class="icon" alt="phone icon">
+                    <img src="images/icons/phone.svg" class="icon" alt="phone icon">
                     +65 6808 8046
                 </div>
 
@@ -115,41 +134,18 @@
 
             <div class="footer-spacer"></div>
 
-            <!-- Divider line -->
-            <div class="footer-line"></div>
-
-            <!-- Copyright -->
-            <p class="footer-copy">
-                © 2026 by Shyam Prabhakar Lab
-            </p>
-
         </div>
+
+        <div class="footer-line"></div>
+
+        <p class="footer-copy">
+            © 2026 by Shyam Prabhakar Lab
+        </p>
 
     </footer>
 
-    <script>
-        const pageName = "Home";
-        document.title = `${pageName} | SP Lab`;
-
-        const navbar = document.querySelector('.navbar');
-        let lastY = window.scrollY;
-        let accumulated = 0;
-
-        window.addEventListener('scroll', () => {
-            const currentY = window.scrollY;
-            accumulated += currentY - lastY;
-            lastY = currentY;
-            if (accumulated > 180) {
-                navbar.style.opacity = '0';
-                navbar.style.pointerEvents = 'none';
-                accumulated = 180;
-            } else if (accumulated < -180) {
-                navbar.style.opacity = '1';
-                navbar.style.pointerEvents = '';
-                accumulated = -180;
-            }
-        });
-    </script>
+    <script src="js/gallery-data.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
