@@ -21,15 +21,14 @@ window.addEventListener('scroll', () => {
     }
 });
 
-/* ========= GALLERY ========= */
-
+/* ========= GALLERY HIGHLIGHTS ========= */
 let currentIndex = 0;
 
 const imgEl = document.querySelector(".gallery-image");
 const captionEl = document.querySelector(".gallery-caption");
 
-const leftBtn = document.querySelector(".left-arrow");
-const rightBtn = document.querySelector(".right-arrow");
+const leftBtn = document.querySelector(".gallery-section .arrow--left");
+const rightBtn = document.querySelector(".gallery-section .arrow--right");
 
 function updateGallery(index) {
     if (!galleryImages?.length) return;
@@ -52,3 +51,48 @@ rightBtn.addEventListener("click", () => {
 });
 
 updateGallery(currentIndex);
+
+/* ========= FEATURED PUBLICATIONS ========= */
+let featuredIndex = 0;
+
+const featuredTitleEl = document.querySelector(".featured-title");
+const featuredMetaEl = document.querySelector(".featured-meta");
+const featuredBodyEl = document.querySelector(".featured-body");
+
+const leftFeaturedBtn = document.querySelector(".featured-section .arrow--left");
+const rightFeaturedBtn = document.querySelector(".featured-section .arrow--right");
+
+function updateFeatured(index) {
+    if (!featuredPublications?.length) return;
+
+    const item = featuredPublications[index];
+    if (!item) return;
+
+    featuredTitleEl.textContent = item.title;
+    if (item.link) {
+        featuredTitleEl.href = item.link;
+        featuredTitleEl.style.pointerEvents = '';
+    } else {
+        featuredTitleEl.removeAttribute('href');
+        featuredTitleEl.style.pointerEvents = 'none';
+    }
+
+    const metaParts = [];
+    if (item.journal) metaParts.push(item.journal);
+    if (item.year) metaParts.push(item.year);
+
+    featuredMetaEl.textContent = metaParts.join(" · ");
+    featuredBodyEl.textContent = item.text || "";
+}
+
+leftFeaturedBtn.addEventListener("click", () => {
+    featuredIndex = (featuredIndex - 1 + featuredPublications.length) % featuredPublications.length;
+    updateFeatured(featuredIndex);
+});
+
+rightFeaturedBtn.addEventListener("click", () => {
+    featuredIndex = (featuredIndex + 1) % featuredPublications.length;
+    updateFeatured(featuredIndex);
+});
+
+updateFeatured(featuredIndex);
