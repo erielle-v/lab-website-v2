@@ -1,56 +1,34 @@
-const galleryImages = [
+const galleryData = [
     {
-        image: "images/gallery/home-highlights/photo1.jpg",
-        caption: "GIS Anniversary Gala"
+        year: "2026",
+        images: [
+            "images/gallery/full/placeholder-1.jpg",
+            "images/gallery/full/placeholder-2.jpg",
+            "images/gallery/full/placeholder-3.jpg"
+        ]
     },
-
     {
-        image: "images/gallery/home-highlights/photo2.jpg",
-        caption: "GIS Anniversary Gala"
+        year: "2021–2025",
+        images: [
+            "images/gallery/full/2021-2025-1.jpg",
+            "images/gallery/full/2021-2025-2.jpg",
+            "images/gallery/full/2021-2025-3.jpg"
+        ]
     },
-
     {
-        image: "images/gallery/home-highlights/photo3.jpg",
-        caption: "Eliora's Wedding"
+        year: "2016–2020",
+        images: [
+            "images/gallery/full/2016-2020-1.jpg",
+            "images/gallery/full/2016-2020-2.jpg",
+            "images/gallery/full/2016-2020-3.jpg"
+        ]
     },
-
     {
-        image: "images/gallery/home-highlights/photo4.jpg",
-        caption: "Merve's Thesis Defence"
-    },
-
-    {
-        image: "images/gallery/home-highlights/photo5.jpg",
-        caption: "Lab Party"
-    },
-
-    {
-        image: "images/gallery/home-highlights/photo6.jpg",
-        caption: "GIS Dinner & Dance"
-    },
-
-    {
-        image: "images/gallery/home-highlights/photo7.jpg",
-        caption: "GIS Dinner & Dance"
-    },
-
-    {
-        image: "images/gallery/home-highlights/photo8.jpg",
-        caption: "Le Min's Long Service Award"
-    },
-
-    {
-        image: "images/gallery/home-highlights/photo9.jpg",
-        caption: "Yurike's Long Service Award"
-    },
-
-    {
-        image: "images/gallery/home-highlights/photo10.jpg",
-        caption: "Dane's Poster Presentation"
-    },
-
-    {
-        image: "images/gallery/home-highlights/photo11.jpg",
-        caption: "Reema's HCA Talk"
+        year: "2010–2015",
+        images: [
+            "images/gallery/full/2010-2015-1.jpg",
+            "images/gallery/full/2010-2015-2.jpg",
+            "images/gallery/full/2010-2015-3.jpg"
+        ]
     }
 ];
