@@ -16,7 +16,7 @@
     <div class="page-container">
 
         <div class="navbar">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
 
             <div class="dropdown">
                 <a href="#" class="nav-item has-dropdown">Projects</a>
@@ -41,94 +41,19 @@
 
             <a href="#">Publications</a>
             <a href="#">The Gang</a>
-            <a href="talks.html">Talks & Seminars</a>
+            <a href="talks.html" class="active">Talks & Seminars</a>
             <a href="gallery.html">Gallery</a>
             <a href="join-us.html">Join Us!</a>
         </div>
 
-        <section class="lab-header">
-            <h1>Shyam Prabhakar Lab</h1>
-            <p>Laboratory of Systems Biology and Data Analytics</p>
-        </section>
-
-        <section class="research-summary">
-            <div class="research-card">
-
-                <h2>We Leverage Single-Cell and Spatial Omics to Understand Human Disease</h2>
-
-                <p>
-                    Our lab is an interdisciplinary team that combines single-cell and spatial omics
-                    technologies with computational and algorithmic approaches to study the mechanisms
-                    underlying human disease. We work closely with clinicians and domain experts to
-                    pursue ambitious, team-driven goals, while fostering a flexible and
-                    supportive environment for scientific and professional growth.
-                </p>
-
-                <div class="cta-buttons">
-                    <a href="#" class="primary-button">Explore Projects</a>
-                    <a href="#" class="secondary-button">Meet the Gang</a>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="gallery-section">
-
+        <section class="talks-section">
             <div class="section-divider">
                 <span class="divider-line"></span>
-
-                <h2>Gallery Highlights</h2>
-
+                <h2>Talks & Seminars</h2>
                 <span class="divider-line"></span>
             </div>
 
-            <div class="gallery-container">
-
-                <button class="arrow arrow--left gallery-arrow" aria-label="Previous image"></button>
-
-                <div class="gallery-frame">
-                    <img class="gallery-image" alt="Gallery image">
-                    <div class="gallery-caption"></div>
-                </div>
-
-                <button class="arrow arrow--right gallery-arrow" aria-label="Next image"></button>
-
-            </div>
-
-        </section>
-
-        <section class="featured-section">
-
-            <div class="section-divider">
-                <span class="divider-line"></span>
-
-                <h2>Featured Publications</h2>
-
-                <span class="divider-line"></span>
-            </div>
-
-            <div class="featured-container">
-
-                <button class="arrow arrow--left featured-arrow" aria-label="Previous publication"></button>
-
-                <div class="featured-frame">
-
-                    <a class="featured-title" href="#" target="_blank"></a>
-
-                    <div class="featured-meta"></div>
-
-                    <div class="featured-body"></div>
-
-                </div>
-
-                <button class="arrow arrow--right featured-arrow" aria-label="Next publication"></button>
-
-            </div>
-
-            <div class="section-cta">
-                <a href="#" class="outline-button">View All Publications</a>
-            </div>
-
+            <div class="talks-list" id="talks-root"></div>
         </section>
 
     </div>
@@ -175,9 +100,9 @@
 
     </footer>
 
-    <script src="js/home-gallery-data.js"></script>
-    <script src="js/home-featured-data.js"></script>
+    <script src="js/talks-data.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

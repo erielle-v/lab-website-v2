@@ -96,6 +96,49 @@ if (leftFeaturedBtn && rightFeaturedBtn) {
     updateFeatured(featuredIndex);
 }
 
+/* ========= TALKS & SEMINARS ========= */
+const talksRoot = document.querySelector("#talks-root");
+
+if (talksRoot && typeof talksData !== "undefined") {
+    talksData.forEach(talk => {
+        const card = document.createElement("div");
+        card.className = "talk-card";
+
+        let mediaHTML = "";
+
+        if (talk.youtube) {
+            const start = talk.start ? `?start=${talk.start}` : "";
+            mediaHTML = `<iframe class="talk-embed" src="https://www.youtube.com/embed/${talk.youtube}${start}" allowfullscreen></iframe>`;
+        } else if (talk.drive) {
+            mediaHTML = `<iframe class="talk-embed" src="https://drive.google.com/file/d/${talk.drive}/preview" allowfullscreen></iframe>`;
+        } else if (talk.audio) {
+            mediaHTML = `<audio class="talk-audio" controls><source src="${talk.audio}"></audio>`;
+        } else if (talk.link) {
+            mediaHTML = "";
+        }
+
+        const titleHTML = talk.link
+            ? `<h3 class="talk-title"><a href="${talk.link}" target="_blank">${talk.title}</a></h3>`
+            : `<h3 class="talk-title">${talk.title}</h3>`;
+
+        const externalLinkHTML = talk.externalLink
+            ? `<a class="talk-external-link" href="${talk.externalLink}" target="_blank">${talk.externalLinkLabel || "Watch here"}</a>`
+            : "";
+
+        card.innerHTML = `
+            ${mediaHTML}
+            <div class="talk-info">
+                ${titleHTML}
+                <p class="talk-event">${talk.event}</p>
+                <p class="talk-date">${talk.date}</p>
+                ${externalLinkHTML}
+            </div>
+        `;
+
+        talksRoot.appendChild(card);
+    });
+}
+
 /* ========= GALLERY PAGE ========= */
 const galleryRoot = document.querySelector("#gallery-root");
 
