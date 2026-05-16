@@ -108,7 +108,7 @@ if (galleryRoot && typeof galleryData !== "undefined") {
         block.className = "gallery-year-block";
 
         block.innerHTML = `
-            <div class="gallery-year-divider section-divider">
+            <div class="section-divider gallery-year-divider">
                 <span class="divider-line"></span>
                 <h2>${group.year}</h2>
                 <span class="divider-line"></span>
@@ -143,10 +143,17 @@ if (galleryRoot && typeof galleryData !== "undefined") {
         currentLightboxIndex = index;
         lightboxImg.src = allImages[index];
         lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+
+        const next = (index + 1) % allImages.length;
+        const prev = (index - 1 + allImages.length) % allImages.length;
+        new Image().src = allImages[next];
+        new Image().src = allImages[prev];
     }
 
     function closeLightbox() {
         lightbox.classList.remove("active");
+        document.body.style.overflow = "";
     }
 
     lightboxClose.addEventListener("click", closeLightbox);

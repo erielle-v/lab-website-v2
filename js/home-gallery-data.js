@@ -5,7 +5,7 @@ const galleryImages = [
     },
 
     {
-        image: "images/gallery/home-highlights/photo2.jpg",
+        image: "images/gallery/home-highlights/photo2.png",
         caption: "GIS Anniversary Gala"
     },
 
