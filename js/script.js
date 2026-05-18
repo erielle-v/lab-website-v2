@@ -113,16 +113,14 @@ if (talksRoot && typeof talksData !== "undefined") {
             mediaHTML = `<iframe class="talk-embed" src="https://drive.google.com/file/d/${talk.drive}/preview" allowfullscreen></iframe>`;
         } else if (talk.audio) {
             mediaHTML = `<audio class="talk-audio" controls><source src="${talk.audio}"></audio>`;
-        } else if (talk.link) {
-            mediaHTML = "";
         }
 
         const titleHTML = talk.link
-            ? `<h3 class="talk-title"><a href="${talk.link}" target="_blank">${talk.title}</a></h3>`
+            ? `<h3 class="talk-title"><a href="${talk.link}" target="_blank" rel="noopener noreferrer">${talk.title}</a></h3>`
             : `<h3 class="talk-title">${talk.title}</h3>`;
 
         const externalLinkHTML = talk.externalLink
-            ? `<a class="talk-external-link" href="${talk.externalLink}" target="_blank">${talk.externalLinkLabel || "Watch here"}</a>`
+            ? `<a class="talk-external-link" href="${talk.externalLink}" target="_blank" rel="noopener noreferrer">${talk.externalLinkLabel || "Watch here"}</a>`
             : "";
 
         card.innerHTML = `
