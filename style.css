@@ -629,7 +629,7 @@ body {
 
 /* ========= GALLERY PAGE ========= */
 .gallery-page-section {
-    padding: var(--section-spacing) 0 var(--section-spacing);
+    padding: var(--section-spacing) 0 10px;
 }
 
 .gallery-year-block {
@@ -659,6 +659,7 @@ body {
     transition: opacity var(--transition-fast), transform var(--transition-fast);
     display: block;
     backface-visibility: hidden;
+    will-change: transform;
 }
 
 .gallery-thumb:hover {
