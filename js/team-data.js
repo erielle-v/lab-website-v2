@@ -1,12 +1,12 @@
 /* PI */
 const piData = {
-  name:    "Shyam Prabhakar",
-  title:   "Associate Director, Spatial and Single Cell Systems<br>Senior Group Leader, Laboratory of Systems Biology and Data Analytics",
-  photo:   "https://prabhakarlab.github.io/images/People/SP portrait.jpg",
-  blurb:   "Shyam Prabhakar obtained a B.Tech in Electronics Engineering from IIT Madras and a PhD in Applied Physics from Stanford University. He received the 2001 American Physical Society PhD thesis award for Beam Physics. Following postdoctoral fellowships in Mathematics at Stanford and Genomics at the Lawrence Berkeley National Laboratory, he joined the Genome Institute of Singapore (GIS). He heads the Singapore Single Cell Network and the GIS Spatial and Single Cell Genomics Platform (S2GP). He co-leads: the Genetic Diversity Network within the international Human Cell Atlas (HCA), HCA Asia, the Asian Epigenome Network, and A*STAR's AI and Analytics (AI3) Horizontal Programme.",
-  email:   "prabhakars@a-star.edu.sg",
-  twitter: "https://twitter.com/ShyamPrabhakar",   // ← update handle if needed
-  astar:   "https://www.a-star.edu.sg/gis/our-people/faculty-staff/members/shyam-prabhakar",
+  name: "Shyam Prabhakar",
+  title: "Associate Director, Spatial and Single Cell Systems<br>Senior Group Leader, Laboratory of Systems Biology and Data Analytics",
+  photo: "https://prabhakarlab.github.io/images/People/SP portrait.jpg",
+  blurb: "Shyam Prabhakar obtained a B.Tech in Electronics Engineering from IIT Madras and a PhD in Applied Physics from Stanford University. He received the 2001 American Physical Society PhD thesis award for Beam Physics. Following postdoctoral fellowships in Mathematics at Stanford and Genomics at the Lawrence Berkeley National Laboratory, he joined the Genome Institute of Singapore (GIS). He heads the Singapore Single Cell Network and the GIS Spatial and Single Cell Genomics Platform (S2GP). He co-leads: the Genetic Diversity Network within the international Human Cell Atlas (HCA), HCA Asia, the Asian Epigenome Network, and A*STAR's AI and Analytics (AI3) Horizontal Programme.",
+  email: "prabhakars@a-star.edu.sg",
+  twitter: "https://twitter.com/ShyamPrabhakar",
+  astar: "https://www.a-star.edu.sg/gis/our-people/faculty-staff/members/shyam-prabhakar",
 };
 
 /* LAB MEMBERS */
@@ -15,15 +15,9 @@ const teamGroups = [
     title: "Programme Managers",
     members: [
       {
-        name:  "Nirmala Arul Rayan",
-        title: "Senior Programme Manager",
-        photo: "https://prabhakarlab.github.io/images/People/nirmala.jpeg",
-        // github: "https://github.com/username",
-      },
-      {
-        name:  "Shvetha Sankaran",
+        name: "Shvetha Sankaran",
         title: "Programme Manager",
-        photo: "https://prabhakarlab.github.io/images/People/shvetha2.jpg",
+        photo: "images/lab-members/shvetha_sankaran.jpg",
       },
     ],
   },
@@ -31,54 +25,44 @@ const teamGroups = [
     title: "Research Fellows & Postdoctoral Fellows",
     members: [
       {
-        name:  "Ignatius Joanito Irwan",
-        title: "Postdoctoral Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/Joanito.jpg",
-      },
-      {
-        name:  "Jonathan Aow Shaozhong",
+        name: "Aow Shaozhong Jonathan",
         title: "Research Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/jonathan.jpg",
+        photo: "images/lab-members/aow_shaozhong_jonathan.jpg",
       },
       {
-        name:  "Jagadish Sankaran",
+        name: "Irwan Ignatius Joanito",
         title: "Postdoctoral Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/jagadish.jpg",
+        photo: "images/lab-members/irwan_ignatius_joanito.jpg",
       },
       {
-        name:  "Kian Hong Kock",
+        name: "Kahraman Merve",
+        title: "Scientist",
+        photo: "images/lab-members/kahraman_merve.jpg",
+      },
+      {
+        name: "Kock Kian Hong",
         title: "Postdoctoral Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/Kian_thumb.jpg",
+        photo: "images/lab-members/kock_kian_hong.jpg",
       },
       {
-        name:  "Li Bo",
+        name: "Matias Ilmari Autio",
+        title: "Senior Scientist",
+        photo: "images/lab-members/matias_ilmari_autio.jpg",
+      },
+      {
+        name: "Reema Baskar",
         title: "Research Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/libo.jpg",
+        photo: "images/lab-members/reema_baskar.png",
       },
       {
-        name:  "Michelle Kong Mei Suen",
-        title: "Research Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/michelle_kong.jpg",
-      },
-      {
-        name:  "Mohamad Amin Honardoost",
+        name: "Sankaran Jagadish",
         title: "Postdoctoral Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/mohammad.jpg",
+        photo: "images/lab-members/jagadish_sankaran.jpg",
       },
       {
-        name:  "Reema Baskar",
+        name: "Yeo Hui Ting, Grace",
         title: "Research Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/Reema.png",
-      },
-      {
-        name:  "Ren Xi",
-        title: "Postdoctoral Fellow",
-        photo: "https://prabhakarlab.github.io/images/People/RenXi.jpg",
-      },
-      {
-        name:   "Yeo Ting Hui Grace",
-        title:  "Research Fellow",
-        photo:  "https://prabhakarlab.github.io/images/People/GraceYeo.png",
+        photo: "images/lab-members/yeo_hui_ting_grace.png",
         github: "https://github.com/yhtgrace",
       },
     ],
@@ -87,14 +71,44 @@ const teamGroups = [
     title: "Senior Research Officers",
     members: [
       {
-        name:  "Lim Gek Liang Michelle",
+        name: "Dwivedi Naman",
         title: "Senior Research Officer",
-        photo: "https://prabhakarlab.github.io/images/People/michelle.png",
+        photo: "images/lab-members/dwivedi_naman.jpg",
       },
       {
-        name:  "Samydurai Sudhagar",
+        name: "Giovani Claresta Wijaya",
         title: "Senior Research Officer",
-        photo: "https://prabhakarlab.github.io/images/People/sudhagar.jpeg",
+        photo: "images/lab-members/giovani_claresta_wijaya.jpg",
+      },
+      {
+        name: "Lim Gek Liang Michelle",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/lim_gek_liang_michelle.png",
+      },
+      {
+        name: "Prasanna Nori Venkatesh",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/prasanna_nori_venkatesh.jpeg",
+      },
+      {
+        name: "Sudhagar Samydurai",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/sudhagar_samydurai.jpeg",
+      },
+      {
+        name: "Tan Le Min",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/tan_le_min.jpg",
+      },
+      {
+        name: "Yurike Laurensia",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/yurike_laurensia.jpg",
+      },
+      {
+        name: "Zhang Qinze Arthur",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/zhang_qinze_arthur.jpg",
       },
     ],
   },
@@ -102,24 +116,9 @@ const teamGroups = [
     title: "Research Officers",
     members: [
       {
-        name:  "Prasanna Nori Venkatesh",
+        name: "Toh Jiamin",
         title: "Research Officer",
-        photo: "https://prabhakarlab.github.io/images/People/prasanna.jpeg",
-      },
-      {
-        name:  "Giovani Claresta Wijaya",
-        title: "Research Officer",
-        photo: "https://prabhakarlab.github.io/images/People/giovani2.jpg",
-      },
-      {
-        name:  "Yurike Laurensia",
-        title: "Research Officer",
-        photo: "https://prabhakarlab.github.io/images/People/Yurike.jpg",
-      },
-      {
-        name:  "Tan Le Min",
-        title: "Research Officer",
-        photo: "https://prabhakarlab.github.io/images/People/lemintan.jpg",
+        photo: "images/lab-members/toh_jiamin.jpg",
       },
     ],
   },
@@ -127,34 +126,24 @@ const teamGroups = [
     title: "Bioinformatics Specialists",
     members: [
       {
-        name:  "Andreas Adinatha",
+        name: "Dane Marc Yap Bagaoisan",
         title: "Bioinformatics Specialist",
-        photo: "https://prabhakarlab.github.io/images/People/AndreasAdinatha1.jpg",
+        photo: "images/lab-members/dane_marc_yap_bagaoisan.jpg",
       },
       {
-        name:  "Han Runbing",
+        name: "Erielle Villanueva",
         title: "Bioinformatics Specialist",
-        photo: "https://prabhakarlab.github.io/images/People/Han Runbing.jpg",
+        photo: "images/lab-members/erielle_villanueva.jpg",
       },
       {
-        name:  "Chen Ziyue",
+        name: "Lim Yong Shan",
         title: "Bioinformatics Specialist",
-        photo: "https://prabhakarlab.github.io/images/People/ziyue.PNG",
+        photo: "images/lab-members/lim_yong_shan.jpg",
       },
       {
-        name:  "Radhika Sonthalia",
+        name: "Peng Shu Qin",
         title: "Bioinformatics Specialist",
-        photo: "https://prabhakarlab.github.io/images/People/Radhika_Sonthalia.jpg",
-      },
-      {
-        name:  "Joseph Lee",
-        title: "Bioinformatics Specialist",
-        photo: "https://prabhakarlab.github.io/images/People/Joseph Lee.jpg",
-      },
-      {
-        name:  "Eliora Violain Buyamin",
-        title: "Bioinformatics Specialist",
-        photo: "https://prabhakarlab.github.io/images/People/Eliora_2.jpg",
+        photo: "images/lab-members/peng_shu_qin.jpg",
       },
     ],
   },
@@ -162,9 +151,9 @@ const teamGroups = [
     title: "Graduate Students",
     members: [
       {
-        name:  "Merve Kahraman",
+        name: "Kuai Yu",
         title: "Graduate Student",
-        photo: "https://prabhakarlab.github.io/images/People/Merve.jpg",
+        photo: "images/lab-members/kuai_yu.jpg",
       },
     ],
   },
