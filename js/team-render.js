@@ -43,6 +43,9 @@ function renderPI() {
   const astarLink = p.astar
     ? `<a class="pi-link" href="${p.astar}" target="_blank" rel="noopener noreferrer">${ICONS.astar} A*STAR Profile</a>`
     : "";
+  const titleHTML = p.astar
+    ? `<a class="pi-title-link" href="${p.astar}" target="_blank" rel="noopener noreferrer">${p.title}</a>`
+    : `<span>${p.title}</span>`;
 
   root.innerHTML = `
   <div class="pi-card">
@@ -50,7 +53,7 @@ function renderPI() {
       <div class="pi-photo-wrap">${photoHTML}</div>
       <div class="pi-info">
         <h2 class="pi-name">${p.name}</h2>
-        <p class="pi-title">${p.title}</p>
+        <p class="pi-title">${titleHTML}</p>
         ${p.blurb ? `<p class="pi-blurb">${p.blurb}</p>` : ""}
       </div>
     </div>

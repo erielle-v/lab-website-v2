@@ -39,21 +39,31 @@
                 </div>
             </div>
 
-            <a href="publications.html">Publications</a>
+            <a href="publications.html" class="active">Publications</a>
             <a href="team.html">The Gang</a>
-            <a href="talks.html" class="active">Talks & Seminars</a>
+            <a href="talks.html">Talks & Seminars</a>
             <a href="gallery.html">Gallery</a>
             <a href="join-us.html">Join Us!</a>
         </div>
 
-        <section class="talks-section">
+        <section class="publications-section">
+
             <div class="section-divider">
                 <span class="divider-line"></span>
-                <h2>Talks & Seminars</h2>
+                <h2>Publications</h2>
                 <span class="divider-line"></span>
             </div>
 
-            <div class="talks-list" id="talks-root"></div>
+            <div id="publications-root"></div>
+
+            <p class="publications-scholar-note">
+                For a full list, visit
+                <a href="https://scholar.google.com.sg/citations?user=i7gQI_QAAAAJ&hl=en" target="_blank"
+                    rel="noopener noreferrer">
+                    Google Scholar ↗
+                </a>
+            </p>
+
         </section>
 
     </div>
@@ -100,9 +110,70 @@
 
     </footer>
 
-    <script src="js/talks-data.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/publications-data.js"></script>
+    <script>
+        const root = document.getElementById("publications-root");
 
+        if (root && typeof publicationsData !== "undefined") {
+
+            // Group by year, descending
+            const byYear = {};
+            publicationsData.forEach(pub => {
+                if (!byYear[pub.year]) byYear[pub.year] = [];
+                byYear[pub.year].push(pub);
+            });
+
+            const years = Object.keys(byYear).map(Number).sort((a, b) => b - a);
+
+            years.forEach(year => {
+                const block = document.createElement("div");
+                block.className = "publications-year-block";
+
+                // Year column
+                const yearCol = document.createElement("div");
+                yearCol.className = "pub-year-col";
+                yearCol.innerHTML = `<p class="pub-year-label">${year}</p>`;
+
+                // Entries column
+                const entriesCol = document.createElement("div");
+                entriesCol.className = "pub-entries-col";
+
+                byYear[year].forEach(pub => {
+                    const entry = document.createElement("div");
+                    entry.className = "pub-entry";
+
+                    const titleEl = pub.link
+                        ? `<a class="pub-title" href="${pub.link}" target="_blank" rel="noopener noreferrer">${pub.title}</a>`
+                        : `<span class="pub-title">${pub.title}</span>`;
+
+                    const linkEl = pub.link
+                        ? `<a class="pub-link" href="${pub.link}" target="_blank" rel="noopener noreferrer">PubMed / DOI</a>`
+                        : "";
+                    // Note: the ↗ arrow is added via CSS ::after on .pub-link
+
+                    const summaryEl = pub.summary
+                        ? `<p class="pub-summary">${pub.summary}</p>`
+                        : "";
+
+                    entry.innerHTML = `
+                        ${titleEl}
+                        <p class="pub-meta">${pub.journal} · ${pub.year}</p>
+                        <p class="pub-authors">${pub.authors}</p>
+                        ${summaryEl}
+                        ${linkEl}
+                    `;
+
+                    entriesCol.appendChild(entry);
+                });
+
+                block.appendChild(yearCol);
+                block.appendChild(entriesCol);
+                root.appendChild(block);
+            });
+        }
+    </script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

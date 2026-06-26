@@ -542,6 +542,154 @@ body {
     opacity: 0.8;
 }
 
+/* ========= PUBLICATIONS ========= */
+.publications-section {
+    padding: var(--section-spacing) 0 var(--section-spacing);
+}
+
+#publications-root {
+    width: calc(100% - var(--page-padding));
+    max-width: 1000px;
+    margin: var(--section-gap) auto 0;
+}
+
+.publications-year-block {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 0 0;
+    margin-bottom: 60px;
+}
+
+.pub-year-col {
+    padding-top: 2px;
+}
+
+.pub-year-label {
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--text-main);
+    opacity: 0.35;
+    line-height: 1;
+    margin: 0;
+}
+
+.pub-entries-col {
+    border-left: 1px solid rgba(34, 34, 34, 0.15);
+    padding-left: 36px;
+}
+
+.pub-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.08);
+}
+
+.pub-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+a.pub-title,
+a.pub-title:visited {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition-fast);
+}
+
+a.pub-title:hover {
+    color: var(--accent);
+}
+
+span.pub-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    color: var(--text-main);
+}
+
+.pub-meta {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.pub-authors {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    opacity: 0.5;
+    margin: 0;
+}
+
+.pub-summary {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin: 4px 0 0;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    padding: 6px 16px;
+    border: 1.5px solid rgba(61, 77, 173, 0.35);
+    border-radius: 999px;
+    color: var(--accent);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.pub-link:hover {
+    background: rgba(61, 77, 173, 0.05);
+    border-color: var(--accent);
+}
+
+.pub-link::after {
+    content: "↗";
+    font-size: 0.75rem;
+}
+
+.publications-scholar-note {
+    width: calc(100% - var(--page-padding));
+    max-width: 1000px;
+    margin: 0 auto var(--section-spacing);
+    text-align: center;
+    font-size: 0.88rem;
+    opacity: 0.55;
+}
+
+.publications-scholar-note a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition-fast);
+}
+
+.publications-scholar-note a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
 /* ========= THE GANG ========= */
 .team-section {
     padding: var(--section-spacing) 0;
@@ -612,6 +760,12 @@ body {
     letter-spacing: 0.02em;
     line-height: 1.5;
     white-space: normal;
+}
+
+.pi-title-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .pi-blurb {
