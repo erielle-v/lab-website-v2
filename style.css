@@ -672,7 +672,7 @@ span.pub-title {
 .publications-scholar-note {
     width: calc(100% - var(--page-padding));
     max-width: 1000px;
-    margin: 0 auto var(--section-spacing);
+    margin: 0 auto;
     text-align: center;
     font-size: 0.88rem;
     opacity: 0.55;

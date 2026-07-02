@@ -22,11 +22,11 @@ const teamGroups = [
     ],
   },
   {
-    title: "Research & Postdoctoral Fellows",
+    title: "Postdoctoral Fellows",
     members: [
       {
         name: "Aow Shaozhong Jonathan",
-        title: "Research Fellow",
+        title: "Postdoctoral Fellow",
         photo: "images/lab-members/aow_shaozhong_jonathan.jpg",
       },
       {
@@ -36,7 +36,7 @@ const teamGroups = [
       },
       {
         name: "Kahraman Merve",
-        title: "Scientist",
+        title: "Postdoctoral Fellow",
         photo: "images/lab-members/kahraman_merve.jpg",
       },
       {
@@ -46,7 +46,7 @@ const teamGroups = [
       },
       {
         name: "Reema Baskar",
-        title: "Research Fellow",
+        title: "Postdoctoral Fellow",
         photo: "images/lab-members/reema_baskar.png",
       },
       {
@@ -57,11 +57,12 @@ const teamGroups = [
       {
         name: "Vairavan Lakshmanan",
         title: "Postdoctoral Fellow",
-        photo: "images/lab-members/placeholder.png",
+        photo: "images/lab-members/vairavan_lakshmanan.jpg",
+        github: "https://github.com/VairavanLakshmanan",
       },
       {
         name: "Yeo Hui Ting, Grace",
-        title: "Research Fellow",
+        title: "Postdoctoral Fellow",
         photo: "images/lab-members/yeo_hui_ting_grace.png",
         github: "https://github.com/yhtgrace",
       },
@@ -76,9 +77,9 @@ const teamGroups = [
         photo: "images/lab-members/giovani_claresta_wijaya.jpg",
       },
       {
-        name: "Lim Gek Liang Michelle",
+        name: "Michelle Lim",
         title: "Senior Research Officer",
-        photo: "images/lab-members/lim_gek_liang_michelle.png",
+        photo: "images/lab-members/michelle_lim.jpg",
       },
       {
         name: "Prasanna Nori Venkatesh",
@@ -111,14 +112,19 @@ const teamGroups = [
     title: "Dry Lab Research Officers",
     members: [
       {
+        name: "Arthur Zhang",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/arthur_zhang.jpg",
+      },
+      {
+        name: "Naman Dwivedi",
+        title: "Senior Research Officer",
+        photo: "images/lab-members/naman_dwivedi.jpeg",
+      },
+      {
         name: "Dane Marc Yap Bagaoisan",
         title: "Research Officer",
         photo: "images/lab-members/dane_marc_yap_bagaoisan.jpg",
-      },
-      {
-        name: "Dwivedi Naman",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/dwivedi_naman.jpg",
       },
       {
         name: "Erielle Villanueva",
@@ -129,16 +135,12 @@ const teamGroups = [
         name: "Lim Yong Shan",
         title: "Research Officer",
         photo: "images/lab-members/lim_yong_shan.jpg",
+        github: "https://github.com/ys-lim",
       },
       {
         name: "Peng Shu Qin",
         title: "Research Officer",
         photo: "images/lab-members/peng_shu_qin.jpg",
-      },
-      {
-        name: "Zhang Qinze Arthur",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/zhang_qinze_arthur.jpg",
       },
     ],
   },
