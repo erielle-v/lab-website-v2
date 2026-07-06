@@ -10,148 +10,127 @@ const piData = {
 };
 
 /* LAB MEMBERS */
-const teamGroups = [
+const teamMembers = [
+  /* Postdoctoral Fellows */
   {
-    title: "Programme Managers",
-    members: [
-      {
-        name: "Shvetha Sankaran",
-        title: "Programme Manager",
-        photo: "images/lab-members/shvetha_sankaran.jpg",
-      },
-    ],
+    name: "Grace Yeo",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/yeo_hui_ting_grace.png",
+    github: "https://github.com/yhtgrace",
   },
   {
-    title: "Postdoctoral Fellows",
-    members: [
-      {
-        name: "Aow Shaozhong Jonathan",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/aow_shaozhong_jonathan.jpg",
-      },
-      {
-        name: "Irwan Ignatius Joanito",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/irwan_ignatius_joanito.jpg",
-      },
-      {
-        name: "Kahraman Merve",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/kahraman_merve.jpg",
-      },
-      {
-        name: "Kock Kian Hong",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/kock_kian_hong.jpg",
-      },
-      {
-        name: "Reema Baskar",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/reema_baskar.png",
-      },
-      {
-        name: "Sankaran Jagadish",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/jagadish_sankaran.jpg",
-      },
-      {
-        name: "Vairavan Lakshmanan",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/vairavan_lakshmanan.jpg",
-        github: "https://github.com/VairavanLakshmanan",
-      },
-      {
-        name: "Yeo Hui Ting, Grace",
-        title: "Postdoctoral Fellow",
-        photo: "images/lab-members/yeo_hui_ting_grace.png",
-        github: "https://github.com/yhtgrace",
-      },
-    ],
+    name: "Irwan Ignatius Joanito",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/irwan_ignatius_joanito.jpg",
   },
   {
-    title: "Wet Lab Research Officers",
-    members: [
-      {
-        name: "Giovani Claresta Wijaya",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/giovani_claresta_wijaya.jpg",
-      },
-      {
-        name: "Michelle Lim",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/michelle_lim.jpg",
-      },
-      {
-        name: "Prasanna Nori Venkatesh",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/prasanna_nori_venkatesh.jpeg",
-      },
-      {
-        name: "Sudhagar Samydurai",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/sudhagar_samydurai.jpeg",
-      },
-      {
-        name: "Tan Le Min",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/tan_le_min.jpg",
-      },
-      {
-        name: "Yurike Laurensia",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/yurike_laurensia.jpg",
-      },
-      {
-        name: "Toh Jiamin",
-        title: "Research Officer",
-        photo: "images/lab-members/toh_jiamin.jpg",
-      },
-    ],
+    name: "Jagadish Sankaran",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/jagadish_sankaran.jpg",
   },
   {
-    title: "Dry Lab Research Officers",
-    members: [
-      {
-        name: "Arthur Zhang",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/arthur_zhang.jpg",
-      },
-      {
-        name: "Naman Dwivedi",
-        title: "Senior Research Officer",
-        photo: "images/lab-members/naman_dwivedi.jpeg",
-      },
-      {
-        name: "Dane Marc Yap Bagaoisan",
-        title: "Research Officer",
-        photo: "images/lab-members/dane_marc_yap_bagaoisan.jpg",
-      },
-      {
-        name: "Erielle Villanueva",
-        title: "Research Officer",
-        photo: "images/lab-members/erielle_villanueva.jpg",
-      },
-      {
-        name: "Lim Yong Shan",
-        title: "Research Officer",
-        photo: "images/lab-members/lim_yong_shan.jpg",
-        github: "https://github.com/ys-lim",
-      },
-      {
-        name: "Peng Shu Qin",
-        title: "Research Officer",
-        photo: "images/lab-members/peng_shu_qin.jpg",
-      },
-    ],
+    name: "Jonathan Aow",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/aow_shaozhong_jonathan.jpg",
   },
   {
-    title: "Graduate Students",
-    members: [
-      {
-        name: "Kuai Yu",
-        title: "Graduate Student",
-        photo: "images/lab-members/kuai_yu.jpg",
-      },
-    ],
+    name: "Kian Hong Kock",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/kock_kian_hong.jpg",
+  },
+  {
+    name: "Merve Kahraman",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/kahraman_merve.jpg",
+  },
+  {
+    name: "Reema Baskar",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/reema_baskar.png",
+  },
+  {
+    name: "Shvetha Sankaran",
+    title: "Programme Manager",
+    photo: "images/lab-members/shvetha_sankaran.jpg",
+  },
+  {
+    name: "Vairavan Lakshmanan",
+    title: "Postdoctoral Fellow",
+    photo: "images/lab-members/vairavan_lakshmanan.jpg",
+    github: "https://github.com/VairavanLakshmanan",
+  },
+
+  /* Senior Research Officers, Research Officers, and Graduate Students */
+  {
+    name: "Arthur Zhang",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/arthur_zhang.jpg",
+  },
+  {
+    name: "Dane Bagaoisan",
+    title: "Research Officer",
+    photo: "images/lab-members/dane_marc_yap_bagaoisan.jpg",
+  },
+  {
+    name: "Erielle Villanueva",
+    title: "Research Officer",
+    photo: "images/lab-members/erielle_villanueva.jpg",
+  },
+  {
+    name: "Giovani Claresta Wijaya",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/giovani_claresta_wijaya.jpg",
+  },
+  {
+    name: "Jiamin Toh",
+    title: "Research Officer",
+    photo: "images/lab-members/toh_jiamin.jpg",
+  },
+  {
+    name: "Kuai Yu",
+    title: "Graduate Student",
+    photo: "images/lab-members/kuai_yu.jpg",
+  },
+  {
+    name: "Le Min Tan",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/tan_le_min.jpg",
+  },
+  {
+    name: "Michelle Lim",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/michelle_lim.jpg",
+  },
+  {
+    name: "Naman Dwivedi",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/naman_dwivedi.jpeg",
+  },
+  {
+    name: "Prasanna Nori Venkatesh",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/prasanna_nori_venkatesh.jpeg",
+  },
+  {
+    name: "Shu Qin Peng",
+    title: "Research Officer",
+    photo: "images/lab-members/peng_shu_qin.jpg",
+  },
+  {
+    name: "Sudhagar Samydurai",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/sudhagar_samydurai.jpeg",
+    badge: { label: "S2GP Manager", href: "resources/s2gp.html" },
+  },
+  {
+    name: "Yong Shan Lim",
+    title: "Research Officer",
+    photo: "images/lab-members/lim_yong_shan.jpg",
+    github: "https://github.com/ys-lim",
+  },
+  {
+    name: "Yurike Laurensia",
+    title: "Senior Research Officer",
+    photo: "images/lab-members/yurike_laurensia.jpg",
   },
 ];

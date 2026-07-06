@@ -67,43 +67,43 @@ function renderPI() {
 }
 
 /* RENDER LAB MEMBERS */
-function renderGroups() {
+function renderMembers() {
   const root = document.getElementById("team-root");
-  if (!root || typeof teamGroups === "undefined") return;
+  if (!root || typeof teamMembers === "undefined") return;
 
-  teamGroups.forEach(group => {
-    const section = document.createElement("div");
-    section.className = "team-group";
+  const memberCards = teamMembers.map(m => {
+    const photoHTML = photoOrPlaceholder(
+      m.photo, m.name,
+      "member-photo", "member-photo-placeholder"
+    );
 
-    const memberCards = group.members.map(m => {
-      const photoHTML = photoOrPlaceholder(
-        m.photo, m.name,
-        "member-photo", "member-photo-placeholder"
-      );
-      const githubLink = m.github
-        ? `<a class="member-github" href="${m.github}" target="_blank" rel="noopener noreferrer">${ICONS.github} GitHub</a>`
-        : "";
+    let badgeHTML = "";
+    if (m.badge) {
+      badgeHTML = `<a class="member-badge" href="${m.badge.href}">${m.badge.label}</a>`;
+    } else if (m.github) {
+      badgeHTML = `<a class="member-badge" href="${m.github}" target="_blank" rel="noopener noreferrer">${ICONS.github} GitHub</a>`;
+    }
 
-      return `
-        <div class="member-card">
-          <div class="member-photo-wrap">${photoHTML}</div>
-          <div class="member-info">
-            <p class="member-name">${m.name}</p>
-            <p class="member-title">${m.title}</p>
-            ${githubLink}
-          </div>
+    return `
+      <div class="member-card">
+        <div class="member-photo-wrap">
+          ${photoHTML}
+          ${badgeHTML}
         </div>
-      `;
-    }).join("");
-
-    section.innerHTML = `
-      <p class="team-group-title">${group.title}</p>
-      <div class="member-grid">${memberCards}</div>
+        <div class="member-info">
+          <p class="member-name">${m.name}</p>
+          <p class="member-title">${m.title}</p>
+        </div>
+      </div>
     `;
+  }).join("");
 
-    root.appendChild(section);
-  });
+  root.innerHTML = `
+    <div class="member-grid">
+      ${memberCards}
+    </div>
+  `;
 }
 
 renderPI();
-renderGroups();
+renderMembers();

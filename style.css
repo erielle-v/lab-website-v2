@@ -817,35 +817,17 @@ span.pub-title {
     fill: currentColor;
 }
 
-/* GROUP SECTIONS */
-.team-group {
+/* MEMBERS */
+.member-grid {
     width: calc(100% - var(--page-padding));
     max-width: 900px;
-    margin: var(--section-gap) auto var(--section-spacing);
-}
+    margin: var(--section-gap) auto 0;
 
-.team-group:last-child {
-    margin-bottom: 0;
-}
-
-.team-group-title {
-    margin: 0 0 24px;
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-main);
-    opacity: 0.55;
-}
-
-.member-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 32px 24px;
 }
 
-/* MEMBERS */
 .member-card {
     display: flex;
     flex-direction: column;
@@ -863,6 +845,7 @@ span.pub-title {
 }
 
 .member-photo-wrap {
+    position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
@@ -915,31 +898,36 @@ span.pub-title {
 .member-title {
     margin: 0;
     font-size: 0.8rem;
-    color: var(--text-main);
-    opacity: 0.55;
+    color: rgba(34, 34, 34, 0.55);
     line-height: 1.4;
 }
 
-.member-github {
+.member-badge {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    margin-top: 6px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    padding: 4px 11px;
+    border: 1.5px solid rgba(61, 77, 173, 0.35);
+    border-radius: 999px;
+    background: var(--bg-main);
     color: var(--accent);
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
     text-decoration: none;
-    opacity: 0.85;
-    transition: opacity var(--transition-fast);
 }
 
-.member-github:hover {
-    opacity: 1;
+.member-badge:hover {
+    background: #e2e6f1;
+    border-color: var(--accent);
 }
 
-.member-github svg {
-    width: 13px;
-    height: 13px;
+.member-badge svg {
+    width: 12px;
+    height: 12px;
     fill: currentColor;
     flex-shrink: 0;
 }
