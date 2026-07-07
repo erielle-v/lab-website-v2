@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Grace Yeo",
     title: "Postdoctoral Fellow",
-    photo: "images/lab-members/yeo_hui_ting_grace.png",
+    photo: "images/lab-members/grace_yeo.png",
     github: "https://github.com/yhtgrace",
   },
   {
@@ -31,17 +31,17 @@ const teamMembers = [
   {
     name: "Jonathan Aow",
     title: "Postdoctoral Fellow",
-    photo: "images/lab-members/aow_shaozhong_jonathan.jpg",
+    photo: "images/lab-members/jonathan_aow.jpg",
   },
   {
     name: "Kian Hong Kock",
     title: "Postdoctoral Fellow",
-    photo: "images/lab-members/kock_kian_hong.jpg",
+    photo: "images/lab-members/kian_hong_kock.jpg",
   },
   {
     name: "Merve Kahraman",
     title: "Postdoctoral Fellow",
-    photo: "images/lab-members/kahraman_merve.jpg",
+    photo: "images/lab-members/merve_kahraman.jpg",
   },
   {
     name: "Reema Baskar",
@@ -69,7 +69,7 @@ const teamMembers = [
   {
     name: "Dane Bagaoisan",
     title: "Research Officer",
-    photo: "images/lab-members/dane_marc_yap_bagaoisan.jpg",
+    photo: "images/lab-members/dane_bagaoisan.jpg",
   },
   {
     name: "Erielle Villanueva",
@@ -77,14 +77,14 @@ const teamMembers = [
     photo: "images/lab-members/erielle_villanueva.jpg",
   },
   {
-    name: "Giovani Claresta Wijaya",
+    name: "Giovani Wijaya",
     title: "Senior Research Officer",
-    photo: "images/lab-members/giovani_claresta_wijaya.jpg",
+    photo: "images/lab-members/giovani_wijaya.jpg",
   },
   {
     name: "Jiamin Toh",
     title: "Research Officer",
-    photo: "images/lab-members/toh_jiamin.jpg",
+    photo: "images/lab-members/jiamin_toh.jpg",
   },
   {
     name: "Kuai Yu",
@@ -94,7 +94,7 @@ const teamMembers = [
   {
     name: "Le Min Tan",
     title: "Senior Research Officer",
-    photo: "images/lab-members/tan_le_min.jpg",
+    photo: "images/lab-members/le_min_tan.jpg",
   },
   {
     name: "Michelle Lim",
@@ -114,7 +114,7 @@ const teamMembers = [
   {
     name: "Shu Qin Peng",
     title: "Research Officer",
-    photo: "images/lab-members/peng_shu_qin.jpg",
+    photo: "images/lab-members/shu_qin_peng.jpg",
   },
   {
     name: "Sudhagar Samydurai",
@@ -125,7 +125,7 @@ const teamMembers = [
   {
     name: "Yong Shan Lim",
     title: "Research Officer",
-    photo: "images/lab-members/lim_yong_shan.jpg",
+    photo: "images/lab-members/yong_shan_lim.jpg",
     github: "https://github.com/ys-lim",
   },
   {

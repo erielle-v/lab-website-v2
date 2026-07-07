@@ -62,7 +62,7 @@ const talksData = [
         title: "CZI Ancestry Networks Grant",
         event: "CNA938 Health Matters Radio Interview, Singapore",
         date: "Jan 26, 2022",
-        audio: "media/CNA938_Shyam_Radio_Interview.mp3"
+        audio: "audio/CNA938_Shyam_Radio_Interview.mp3"
     },
 
     {

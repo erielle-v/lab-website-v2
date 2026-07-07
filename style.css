@@ -542,6 +542,202 @@ body {
     opacity: 0.8;
 }
 
+/* ========= PROJECTS LANDING PAGE ========= */
+.projects-section {
+    padding: var(--section-spacing) 0 var(--section-spacing);
+}
+
+.projects-grid {
+    width: calc(100% - var(--page-padding));
+    max-width: 1000px;
+    margin: var(--section-gap) auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+/* Card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(34, 34, 34, 0.15);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--bg-main);
+    text-decoration: none;
+    color: var(--text-main);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.project-card:hover {
+    border-color: rgba(61, 77, 173, 0.35);
+    box-shadow: 0 4px 14px rgba(61, 77, 173, 0.08);
+}
+
+/* Thumbnail */
+.project-thumb-wrap {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background: rgba(61, 77, 173, 0.06);
+    flex-shrink: 0;
+}
+
+.project-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-thumb {
+    transform: scale(1.03);
+}
+
+.project-thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-thumb-placeholder svg {
+    width: 36px;
+    height: 36px;
+    opacity: 0.2;
+}
+
+/* Card info */
+.project-info {
+    padding: 18px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.project-title {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    color: var(--text-main);
+    transition: color var(--transition-fast);
+}
+
+.project-card:hover .project-title {
+    color: var(--accent);
+}
+
+.project-description {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    opacity: 0.55;
+}
+
+/* ========= RESOURCES LANDING PAGE ========= */
+.resources-section {
+    padding: var(--section-spacing) 0 var(--section-spacing);
+}
+
+.resources-grid {
+    width: calc(100% - var(--page-padding));
+    max-width: 1000px;
+    margin: var(--section-gap) auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+/* Card */
+.resource-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(34, 34, 34, 0.15);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--bg-main);
+    text-decoration: none;
+    color: var(--text-main);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.resource-card:hover {
+    border-color: rgba(61, 77, 173, 0.35);
+    box-shadow: 0 4px 14px rgba(61, 77, 173, 0.08);
+}
+
+/* Thumbnail */
+.resource-thumb-wrap {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background: rgba(61, 77, 173, 0.06);
+    flex-shrink: 0;
+}
+
+.resource-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.resource-card:hover .resource-thumb {
+    transform: scale(1.03);
+}
+
+.resource-thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource-thumb-placeholder svg {
+    width: 36px;
+    height: 36px;
+    opacity: 0.2;
+}
+
+/* Card info */
+.resource-info {
+    padding: 18px 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.resource-title {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    color: var(--text-main);
+    transition: color var(--transition-fast);
+}
+
+.resource-card:hover .resource-title {
+    color: var(--accent);
+}
+
+.resource-description {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    opacity: 0.55;
+}
+
 /* ========= PUBLICATIONS ========= */
 .publications-section {
     padding: var(--section-spacing) 0 var(--section-spacing);

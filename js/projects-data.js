@@ -14,31 +14,31 @@ const projectsData = [
     {
         title: "TISHUMAP",
         description: "Spatial mapping of tissue architecture at single-cell resolution.",
-        thumbnail: null,
+        thumbnail: "../images/projects-and-resources/tishumap.jpg",
         page: "tishumap.html"
     },
     {
         title: "AIDA",
         description: "A multi-national single-cell reference atlas of Asian immune cell diversity.",
-        thumbnail: null,
+        thumbnail: "../images/projects-and-resources/aida.jpg",
         page: "aida.html"
     },
     {
         title: "Clonal Haematopoiesis",
         description: "Understanding somatic mutations in blood stem cells and their role in disease.",
-        thumbnail: null,
+        thumbnail: "../images/projects-and-resources/clonal_haematopoiesis.jpg",
         page: "clonal-haematopoiesis.html"
     },
     {
         title: "Building a Virtual Cell",
         description: "Integrating multi-omics data to computationally model human cell behaviour.",
-        thumbnail: null,
+        thumbnail: "../images/projects-and-resources/virtual_cell.jpg",
         page: "virtual-cell.html"
     },
     {
         title: "Human Cell Atlas",
         description: "Contributing single-cell genomics data to a global map of all human cell types.",
-        thumbnail: null,
+        thumbnail: "../images/projects-and-resources/hca.jpg",
         page: "human-cell-atlas.html"
     },
 ];

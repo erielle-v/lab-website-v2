@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources</title>
+    <title>S2GP</title>
     <link rel="stylesheet" href="../style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
@@ -21,11 +21,11 @@
             <div class="dropdown">
                 <a href="../projects/projects.html" class="nav-item has-dropdown">Projects</a>
                 <div class="dropdown-content">
-                    <a href="../projects/tishumap.html">TISHUMAP</a>
-                    <a href="../projects/aida.html">AIDA</a>
-                    <a href="../projects/clonal-haematopoiesis.html">Clonal Haematopoiesis</a>
-                    <a href="../projects/virtual-cell.html">Building a Virtual Cell</a>
-                    <a href="../projects/human-cell-atlas.html">Human Cell Atlas</a>
+                    <a href="#">TISHUMAP</a>
+                    <a href="#">AIDA</a>
+                    <a href="#">Clonal Haematopoiesis</a>
+                    <a href="#">Building a Virtual Cell</a>
+                    <a href="#">Human Cell Atlas</a>
                 </div>
             </div>
 
@@ -53,18 +53,47 @@
             <a href="../join-us.html">Join Us!</a>
         </div>
 
-        <section class="resources-section">
-
+        <section class="join-section">
             <div class="section-divider">
                 <span class="divider-line"></span>
-                <h2>Resources</h2>
+                <h2>S2GP Platform</h2>
                 <span class="divider-line"></span>
             </div>
 
-            <div class="resources-grid" id="resources-grid"></div>
+            <div class="join-card">
+                <p>
+                    The Spatial and Single Cell Genomics Platform (S2GP; previously the Single-Cell Omics Centre)
+                    provides the local research community with easy access to state-of-the-art single-cell
+                    capabilities, multi-omics expertise, and consultation. We offer multiple 10x and Fluidigm
+                    workflows (scRNA-seq, scATAC-seq, immune profiling [TCR, BCR], spatial transcriptome profiling).
+                    S2GP is a core facility that also provides training.
+                </p>
 
+                <p>
+                    We're a 10x Genomics Certified Service Provider for Single Cell Gene Expression and Spatial
+                    Gene Expression Profiling solutions.
+                </p>
+
+                <p>
+                    <strong>Contact:</strong><br>
+                    Shyam Prabhakar<br>
+                    Associate Director, Spatial and Single Cell Systems<br>
+                    <a href="mailto:prabhakars@a-star.edu.sg">prabhakars@a-star.edu.sg</a>
+                </p>
+
+                <p>
+                    Sudhagar Samydurai<br>
+                    S2GP Manager<br>
+                    <a href="mailto:samydurais@a-star.edu.sg">samydurais@a-star.edu.sg</a>
+                </p>
+            </div>
+
+            <div class="section-cta">
+                <a class="outline-button"
+                    href="https://www.a-star.edu.sg/gis/our-science/spatial-and-single-cell-systems/spatial-and-single-cell-genomics-platform"
+                    target="_blank" rel="noopener">Visit S2GP Page ↗</a>
+            </div>
         </section>
-
     </div>
 
     <footer class="site-footer">
@@ -75,8 +104,8 @@
             </h3>
 
             <div class="footer-info">
-                <a class="footer-item footer-link" href="https://maps.google.com/?q=Genome+Institute+of+Singapore+(GIS)"
-                    target="_blank">
+                <a class="footer-item footer-link"
+                    href="https://maps.google.com/?q=Genome+Institute+of+Singapore+(GIS)" target="_blank">
                     <img src="../images/footer-icons/location.svg" class="icon icon-location">
                     <span>60 Biopolis Street, Genome, #03-01, Singapore 138672</span>
                 </a>
@@ -106,43 +135,6 @@
         </p>
 
     </footer>
-
-    <script src="../js/resources-data.js"></script>
-    <script>
-        const grid = document.getElementById("resources-grid");
-
-        if (grid && typeof resourcesData !== "undefined") {
-            resourcesData.forEach(resource => {
-                const card = document.createElement("a");
-                card.className = "resource-card";
-                card.href = resource.page;
-
-                const thumbHTML = resource.thumbnail
-                    ? `<div class="resource-thumb-wrap">
-                           <img class="resource-thumb" src="${resource.thumbnail}" alt="${resource.title}">
-                       </div>`
-                    : `<div class="resource-thumb-wrap">
-                           <div class="resource-thumb-placeholder">
-                               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                   <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                   <circle cx="8.5" cy="8.5" r="1.5"/>
-                                   <path d="M21 15l-5-5L5 21"/>
-                               </svg>
-                           </div>
-                       </div>`;
-
-                card.innerHTML = `
-                    ${thumbHTML}
-                    <div class="resource-info">
-                        <h3 class="resource-title">${resource.title}</h3>
-                        <p class="resource-description">${resource.description}</p>
-                    </div>
-                `;
-
-                grid.appendChild(card);
-            });
-        }
-    </script>
 
     <script src="../js/script.js"></script>
 </body>
