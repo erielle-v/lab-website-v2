@@ -19,9 +19,9 @@ const teamMembers = [
     github: "https://github.com/yhtgrace",
   },
   {
-    name: "Irwan Ignatius Joanito",
+    name: "Ignasius Joanito",
     title: "Postdoctoral Fellow",
-    photo: "images/lab-members/irwan_ignatius_joanito.jpg",
+    photo: "images/lab-members/ignasius_joanito.jpg",
   },
   {
     name: "Jagadish Sankaran",

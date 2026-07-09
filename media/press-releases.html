@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources</title>
+    <title>Press Releases</title>
     <link rel="stylesheet" href="../style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
@@ -30,11 +30,11 @@
             </div>
 
             <div class="dropdown">
-                <a href="resources.html" class="nav-item has-dropdown active">Resources</a>
+                <a href="../resources/resources.html" class="nav-item has-dropdown">Resources</a>
                 <div class="dropdown-content">
-                    <a href="software.html">Software</a>
-                    <a href="s2gp-platform.html">S2GP Platform</a>
-                    <a href="datasets-protocols.html">Datasets & Protocols</a>
+                    <a href="../resources/software.html">Software</a>
+                    <a href="../resources/s2gp-platform.html">S2GP Platform</a>
+                    <a href="../resources/datasets-protocols.html">Datasets & Protocols</a>
                 </div>
             </div>
 
@@ -42,10 +42,10 @@
             <a href="../team.html">The Gang</a>
 
             <div class="dropdown">
-                <a href="#" class="nav-item has-dropdown">Media</a>
+                <a href="#" class="nav-item has-dropdown active">Media</a>
                 <div class="dropdown-content">
-                    <a href="../media/talks.html">Talks & Seminars</a>
-                    <a href="../media/press-releases.html">Press Releases</a>
+                    <a href="talks.html">Talks & Seminars</a>
+                    <a href="press-releases.html">Press Releases</a>
                 </div>
             </div>
 
@@ -53,15 +53,9 @@
             <a href="../join-us.html">Join Us!</a>
         </div>
 
-        <section class="resources-section">
+        <section class="software-section">
 
-            <div class="section-divider">
-                <span class="divider-line"></span>
-                <h2>Resources</h2>
-                <span class="divider-line"></span>
-            </div>
-
-            <div class="resources-grid" id="resources-grid"></div>
+            <div id="press-releases-root"></div>
 
         </section>
 
@@ -107,40 +101,48 @@
 
     </footer>
 
-    <script src="../js/resources-data.js"></script>
+    <script src="../js/press-releases-data.js"></script>
     <script>
-        const grid = document.getElementById("resources-grid");
+        const pressRoot = document.getElementById("press-releases-root");
 
-        if (grid && typeof resourcesData !== "undefined") {
-            resourcesData.forEach(resource => {
-                const card = document.createElement("a");
-                card.className = "resource-card";
-                card.href = resource.page;
+        if (pressRoot && typeof pressReleasesData !== "undefined") {
 
-                const thumbHTML = resource.thumbnail
-                    ? `<div class="resource-thumb-wrap">
-                           <img class="resource-thumb" src="${resource.thumbnail}" alt="${resource.title}">
-                       </div>`
-                    : `<div class="resource-thumb-wrap">
-                           <div class="resource-thumb-placeholder">
-                               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                   <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                   <circle cx="8.5" cy="8.5" r="1.5"/>
-                                   <path d="M21 15l-5-5L5 21"/>
-                               </svg>
-                           </div>
-                       </div>`;
+            // Group entries by project, preserving first-seen order
+            const projectOrder = [];
+            const grouped = {};
 
-                card.innerHTML = `
-                    ${thumbHTML}
-                    <div class="resource-info">
-                        <h3 class="resource-title">${resource.title}</h3>
-                        <p class="resource-description">${resource.description}</p>
+            pressReleasesData.forEach(item => {
+                if (!grouped[item.project]) {
+                    grouped[item.project] = [];
+                    projectOrder.push(item.project);
+                }
+                grouped[item.project].push(item);
+            });
+
+            const sectionsHTML = projectOrder.map(project => {
+                const entriesHTML = grouped[project].map(item => `
+                    <div class="software-entry">
+                        <h3 class="software-title">${item.title}</h3>
+                        <p class="software-description">${item.source}</p>
+                        <div class="software-links">
+                            <a class="software-link" href="${item.url}" target="_blank" rel="noopener noreferrer">Read Article</a>
+                        </div>
+                    </div>
+                `).join("");
+
+                return `
+                    <div class="section-divider">
+                        <span class="divider-line"></span>
+                        <h2>${project}</h2>
+                        <span class="divider-line"></span>
+                    </div>
+                    <div class="software-list" style="margin: var(--section-gap) auto 0; max-width: 900px; width: calc(100% - var(--page-padding));">
+                        ${entriesHTML}
                     </div>
                 `;
+            }).join("<div style=\"height: var(--section-spacing);\"></div>");
 
-                grid.appendChild(card);
-            });
+            pressRoot.innerHTML = sectionsHTML;
         }
     </script>
 

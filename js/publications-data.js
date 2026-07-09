@@ -30,6 +30,22 @@ const publicationsData = [
         link: "https://www.nature.com/articles/s41588-024-01664-3",
         summary: "Spatial omics data are clustered to define both cell types and tissue domains. We present Building Aggregates with a Neighborhood Kernel and Spatial Yardstick (BANKSY), an algorithm that unifies these two spatial clustering problems by embedding cells in a product space of their own and the local neighborhood transcriptome, representing cell state and microenvironment, respectively. In summary, BANKSY provides an accurate, biologically motivated, scalable and versatile framework for analyzing spatially resolved omics data."
     },
+    {
+        year: 2024,
+        title: "Quantification of Escape from X Chromosome Inactivation with Single-cell Omics Data Reveals Heterogeneity Across Cell Types and Tissues",
+        authors: "Tomofuji Y, Edahiro R, ..., Prabhakar S, ..., Okada Y",
+        journal: "Cell Genomics",
+        link: "https://doi.org/10.1016/j.xgen.2024.100625",
+        summary: "Several X-linked genes escape X chromosome inactivation (XCI), but differences in this escape across cell types and tissues have been poorly characterized. The authors developed scLinaX, a computational method for directly quantifying relative gene expression from the inactivated X chromosome using droplet-based single-cell RNA-seq data, revealing consistently stronger escape from XCI in lymphocytes than in myeloid cells across blood, multi-organ, and chromatin-accessibility datasets. Comparisons of genome-wide association effect sizes between sexes further suggested that this escape shapes genotype-phenotype associations in humans."
+    },
+    {
+        year: 2024,
+        title: "Single-cell RNA Sequencing of Peripheral Blood Links Cell-type-specific Regulation of Splicing to Autoimmune and Inflammatory Diseases",
+        authors: "Tian C, Zhang Y, ..., Prabhakar S, ..., Liu B",
+        journal: "Nature Genetics",
+        link: "https://doi.org/10.1038/s41588-024-02019-8",
+        summary: "Alternative splicing shapes complex traits, but whether its regulation varies across trait-relevant cell types and genetic ancestries had been unclear, largely due to the European-centric focus of existing functional genomics datasets. Analyzing nearly one million peripheral blood mononuclear cells from 474 healthy donors of diverse Asian ancestries in the Asian Immune Diversity Atlas, the authors mapped cell-type-specific splicing QTLs and identified widespread sex-biased and ancestry-biased alternative splicing. Splicing QTLs were significantly enriched for autoimmune and inflammatory disease heritability, and the team functionally validated an East Asian-specific variant associated with Graves' disease."
+    },
 
     // ── 2023 ──────────────────────────────────────────────────
     {
