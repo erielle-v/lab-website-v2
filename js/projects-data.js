@@ -24,10 +24,10 @@ const projectsData = [
         page: "aida.html"
     },
     {
-        title: "Clonal Haematopoiesis",
+        title: "PRADICT",
         description: "Understanding somatic mutations in blood stem cells and their role in disease.",
-        thumbnail: "../images/projects-and-resources/clonal_haematopoiesis.jpg",
-        page: "clonal-haematopoiesis.html"
+        thumbnail: "../images/projects-and-resources/pradict.jpg",
+        page: "pradict.html"
     },
     {
         title: "Building a Virtual Cell",

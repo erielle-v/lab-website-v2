@@ -5,10 +5,31 @@
 //    title       – headline of the press release (string)
 //    source      – publishing outlet, e.g. "A*STAR" (string)
 //    url         – link to the release (string)
+//
+//  Project groups render in the order they first appear below.
+//  Within a group, list entries newest first.
 // ============================================================
 const pressReleasesData = [
-
-    // ── AIDA ──────────────────────────────────────────────────
+    // ── TISHUMAP (newest first) ─────────────────────────────
+    {
+        project: "TISHUMAP",
+        title: "Whole in One",
+        source: "A*STAR",
+        url: "https://research.a-star.edu.sg/articles/features/whole-in-one/",
+    },
+    {
+        project: "TISHUMAP",
+        title: "10x Genomics and A*STAR Genome Institute of Singapore Launch TISHUMAP Study to Advance AI-Driven Drug Target Discovery",
+        source: "A*STAR",
+        url: "https://www.a-star.edu.sg/gis/press-releases/press-releases-2025/10x-genomics-and-astar-genome-institute-of-singapore-launch-tishumap-study-to-advance-ai-driven-drug-target-discovery",
+    },
+    {
+        project: "TISHUMAP",
+        title: "Researchers Awarded Close to $18 Million Grant to Develop New AI Platform to Aid Disease Study and Drug Development",
+        source: "A*STAR",
+        url: "https://www.a-star.edu.sg/gis/press-releases/press-releases-2024/researchers-awarded-close-to--18-million-grant-to-develop-new-ai-platform-to-aid-disease-study-and-drug-development",
+    },
+    // ── AIDA (original order, unchanged) ──────────────────────
     {
         project: "AIDA",
         title: "Singapore Scientists to Help Develop Asian Immune Diversity Atlas",
@@ -39,13 +60,4 @@ const pressReleasesData = [
         source: "Chan Zuckerberg Initiative",
         url: "https://chanzuckerberg.com/science/programs-resources/cell-science/ancestry-networks/immune-cell-atlas-of-asian-populations/",
     },
-
-    // ── TISHUMAP ──────────────────────────────────────────────
-    {
-        project: "TISHUMAP",
-        title: "Whole in One",
-        source: "A*STAR",
-        url: "https://research.a-star.edu.sg/articles/features/whole-in-one/",
-    },
-
 ];

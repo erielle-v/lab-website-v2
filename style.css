@@ -453,6 +453,34 @@ body {
     color: var(--accent);
 }
 
+/* ========= HIRING ========= */
+
+.hiring-section {
+    padding: 0 0 var(--section-spacing) ;
+}
+
+.hiring-content {
+    width: calc(100% - var(--page-padding));
+    max-width: 850px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.hiring-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.hiring-content p + p {
+    margin-top: 18px;
+}
+
+.hiring-section .section-cta {
+    margin: 40px auto 0px;
+}
+
 /* ========= BANNER ========= */
 .parallax-banner {
     height: 350px;
@@ -1653,6 +1681,10 @@ span.pub-title {
 /* ========= JOIN US ========= */
 .join-section {
     padding: var(--section-spacing) 0 var(--section-spacing);
+}
+
+.join-section + .join-section {
+    padding-top: 0;
 }
 
 .join-card {

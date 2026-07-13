@@ -70,6 +70,7 @@ const teamMembers = [
     name: "Dane Bagaoisan",
     title: "Research Officer",
     photo: "images/lab-members/dane_bagaoisan.jpg",
+    github: "https://github.com/DaneMarc",
   },
   {
     name: "Erielle Villanueva",
@@ -90,6 +91,7 @@ const teamMembers = [
     name: "Kuai Yu",
     title: "Graduate Student",
     photo: "images/lab-members/kuai_yu.jpg",
+    github: "https://github.com/yu-kuai",
   },
   {
     name: "Le Min Tan",
