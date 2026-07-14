@@ -122,7 +122,7 @@ const teamMembers = [
     name: "Sudhagar Samydurai",
     title: "Senior Research Officer",
     photo: "images/lab-members/sudhagar_samydurai.jpeg",
-    badge: { label: "S2GP Manager", href: "resources/s2gp.html" },
+    badge: { label: "S2GP Manager", href: "https://www.a-star.edu.sg/gis/our-science/spatial-and-single-cell-systems/spatial-and-single-cell-genomics-platform" },
   },
   {
     name: "Yong Shan Lim",
