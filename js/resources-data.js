@@ -27,6 +27,6 @@ const resourcesData = [
         title: "Datasets & Protocols",
         description: "Publicly available datasets alongside the experimental protocols used and developed by the lab.",
         thumbnail: "../images/projects-and-resources/datasets_and_protocols.jpg",
-        page: "resources.html"
+        page: "datasets-protocols.html"
     },
 ];

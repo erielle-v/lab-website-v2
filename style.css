@@ -254,6 +254,7 @@ body {
     display: flex;
     align-items: center;
     gap: 100px;
+    scroll-margin-top: 150px;
 }
 
 .section-divider--spaced {
@@ -1819,4 +1820,13 @@ a.contact-email svg {
     width: 15px;
     height: 15px;
     fill: currentColor;
+}
+
+/* ========= FOOTNOTE TEXT (e.g. asterisked attribution lines) ========= */
+.footnote-text {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    opacity: 0.85;
 }
