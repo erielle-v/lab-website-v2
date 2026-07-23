@@ -1,13 +1,14 @@
 const galleryImages = [
     {
-        image: "images/gallery/home-highlights/photo1.jpg",
+        image: "images/gallery/home-highlights/photo1.png",
         caption: "GIS Anniversary Gala"
     },
 
     {
-        image: "images/gallery/home-highlights/photo2.png",
+        image: "images/gallery/home-highlights/photo2.jpg",
         caption: "GIS Anniversary Gala"
     },
+
 
     {
         image: "images/gallery/home-highlights/photo3.jpg",
@@ -52,5 +53,25 @@ const galleryImages = [
     {
         image: "images/gallery/home-highlights/photo11.jpg",
         caption: "Reema's HCA Talk"
+    },
+
+    {
+        image: "images/gallery/home-highlights/photo12.jpg",
+        caption: "Lab Outing - Hiking"
+    },
+
+    {
+        image: "images/gallery/home-highlights/photo13.jpg",
+        caption: "Lab Outing - BBQ"
+    },
+
+    {
+        image: "images/gallery/home-highlights/photo14.jpg",
+        caption: "Human Cell Atlas Meeting in Tokyo"
+    },
+
+    {
+        image: "images/gallery/home-highlights/photo15.jpg",
+        caption: "Lab Outing - Paintball"
     }
 ];

@@ -1,5 +1,14 @@
 const talksData = [
     {
+        title: "Overview of the HCA Asia and HCA Diversity Task Force",
+        event: "2024 Human Cell Atlas (HCA) Asia Meeting, Hong Kong, China",
+        date: "Dec 3, 2024",
+        link: "https://www.youtube.com/watch?v=dzDkIc4WgkM&t=2242s",
+        youtube: "dzDkIc4WgkM",
+        start: 2242
+    },
+
+    {
         title: "Spatial and Single Cell Diversity of Cells and Humans",
         event: "Center for Human Brain Variation (CHBV) Seminar Series, Broad Institute",
         date: "Jun 11, 2024",
@@ -62,7 +71,7 @@ const talksData = [
         title: "CZI Ancestry Networks Grant",
         event: "CNA938 Health Matters Radio Interview, Singapore",
         date: "Jan 26, 2022",
-        audio: "audio/CNA938_Shyam_Radio_Interview.mp3"
+        audio: "../audio/CNA938_Shyam_Radio_Interview.mp3"
     },
 
     {
@@ -145,7 +154,7 @@ const talksData = [
         drive: "1Qeb2IpXWdSvVSQI6TvW2rHCPN-0kC97f"
     },
 
-     {
+    {
         title: "Histone Acetylome-wide Association Study of Autism Spectrum Disorder",
         event: "Stanley Center Online Journal Club",
         date: "Jan 13, 2017",

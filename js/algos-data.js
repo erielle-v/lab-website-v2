@@ -1,5 +1,5 @@
 // ============================================================
-//  SOFTWARE DATA
+//  ALGOS DATA
 //  Fields:
 //    name        – tool name (string)
 //    description – 1-2 sentence summary (string)
@@ -9,7 +9,7 @@
 //                  just label each one clearly.
 // ============================================================
 
-const softwareData = [
+const algosData = [
 
   {
     name: "BANKSY",

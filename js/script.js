@@ -107,8 +107,13 @@ if (talksRoot && typeof talksData !== "undefined") {
         let mediaHTML = "";
 
         if (talk.youtube) {
-            const start = talk.start ? `?start=${talk.start}` : "";
-            mediaHTML = `<iframe class="talk-embed" src="https://www.youtube.com/embed/${talk.youtube}${start}" allowfullscreen></iframe>`;
+            const start = talk.start ? `&start=${talk.start}` : "";
+            mediaHTML = `
+                <div class="talk-facade" data-youtube="${talk.youtube}" data-start="${start}"
+                    style="background-image: url('https://img.youtube.com/vi/${talk.youtube}/hqdefault.jpg')">
+                    <div class="talk-play-button"></div>
+                </div>
+             `;
         } else if (talk.drive) {
             mediaHTML = `<iframe class="talk-embed" src="https://drive.google.com/file/d/${talk.drive}/preview" allowfullscreen></iframe>`;
         } else if (talk.audio) {
@@ -134,6 +139,19 @@ if (talksRoot && typeof talksData !== "undefined") {
         `;
 
         talksRoot.appendChild(card);
+
+        talksRoot.querySelectorAll(".talk-facade").forEach(facade => {
+            facade.addEventListener("click", () => {
+                const id = facade.dataset.youtube;
+                const start = facade.dataset.start;
+                const iframe = document.createElement("iframe");
+                iframe.className = "talk-embed";
+                iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1${start}`;
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.allowFullscreen = true;
+                facade.replaceWith(iframe);
+            });
+        });
     });
 }
 

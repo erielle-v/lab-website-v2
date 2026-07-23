@@ -175,33 +175,33 @@ body {
     align-items: center;
     max-width: 830px;
     padding: 67px 42px 61px;
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(34, 34, 34, 0.12);
     border-radius: 26px;
-    background: rgba(10, 10, 20, 0.55);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: var(--bg-main);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 24px rgba(34, 34, 34, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: var(--text-main);
     text-align: center;
 }
 
 .research-card h2 {
     margin: 0 0 20px;
-    color: var(--bg-main);
+    color: var(--text-main);
     font-family: var(--font-heading);
     font-size: 2.1rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     line-height: 1.5;
-    max-width: 36ch;
+    max-width: 48ch;
 }
 
 .research-card p {
     margin: 0 0 18px;
-    color: var(--bg-main);
+    color: var(--text-main);
     font-size: 1.1rem;
     line-height: 1.8;
-    max-width: 79ch;
+    max-width: 85ch;
 }
 
 /* CTA BUTTONS */
@@ -216,30 +216,31 @@ body {
 .secondary-button {
     padding: 12px 20px;
     border-radius: 999px;
-    color: var(--text-main);
     font-weight: 600;
     text-decoration: none;
     transition: background var(--transition-fast), color var(--transition-fast), border var(--transition-fast);
 }
 
 .primary-button {
-    background: var(--bg-main);
-    color: var(--text-main);
-}
-
-.primary-button:hover {
-    background: #e2e6f1;
-    color: var(--accent);
-}
-
-.secondary-button {
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--accent);
     color: var(--bg-main);
 }
 
+.primary-button:hover {
+    background: #2f3c8c;
+    color: var(--bg-main);
+}
+
+.secondary-button {
+    border: 1px solid rgba(34, 34, 34, 0.4);
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--text-main);
+}
+
 .secondary-button:hover {
-    background: rgba(255, 255, 255, 0.14);
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--accent);
 }
 
 /* ========= GALLERY HIGHLIGHTS ========= */
@@ -457,7 +458,7 @@ body {
 /* ========= HIRING ========= */
 
 .hiring-section {
-    padding: 0 0 var(--section-spacing) ;
+    padding: 0 0 var(--section-spacing);
 }
 
 .hiring-content {
@@ -474,7 +475,7 @@ body {
     opacity: 0.9;
 }
 
-.hiring-content p + p {
+.hiring-content p+p {
     margin-top: 18px;
 }
 
@@ -585,7 +586,7 @@ body {
     max-width: 1000px;
     margin: var(--section-gap) auto 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
 }
 
@@ -771,23 +772,23 @@ body {
     opacity: 0.55;
 }
 
-/* ========= SOFTWARE ========= */
-.software-section {
+/* ========= ALGOS ========= */
+.algos-section {
     padding: var(--section-spacing) 0 var(--section-spacing);
 }
 
-#software-root {
+#algos-root {
     width: calc(100% - var(--page-padding));
     max-width: 900px;
     margin: var(--section-gap) auto 0;
 }
 
-.software-list {
+.algos-list {
     display: flex;
     flex-direction: column;
 }
 
-.software-entry {
+.algos-entry {
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -796,13 +797,13 @@ body {
     border-bottom: 1px solid rgba(34, 34, 34, 0.08);
 }
 
-.software-entry:last-child {
+.algos-entry:last-child {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-.software-title {
+.algos-title {
     margin: 0;
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -812,21 +813,21 @@ body {
     color: var(--text-main);
 }
 
-.software-description {
+.algos-description {
     font-size: 1rem;
     line-height: 1.7;
     opacity: 0.9;
     margin: 4px 0 0;
 }
 
-.software-links {
+.algos-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 6px;
 }
 
-.software-link {
+.algos-link {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -841,12 +842,12 @@ body {
     transition: background var(--transition-fast), border-color var(--transition-fast);
 }
 
-.software-link:hover {
+.algos-link:hover {
     background: rgba(61, 77, 173, 0.05);
     border-color: var(--accent);
 }
 
-.software-link::after {
+.algos-link::after {
     content: "↗";
     font-size: 0.75rem;
 }
@@ -1091,6 +1092,10 @@ body {
     margin-bottom: 60px;
 }
 
+.publications-year-block:last-child {
+    margin-bottom: 0;
+}
+
 .pub-year-col {
     padding-top: 2px;
 }
@@ -1203,10 +1208,11 @@ span.pub-title {
 .publications-scholar-note {
     width: calc(100% - var(--page-padding));
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 28px auto var(--section-gap);
     text-align: center;
-    font-size: 0.88rem;
-    opacity: 0.55;
+    font-size: 1.05rem;
+    font-weight: 600;
+    opacity: 0.85;
 }
 
 .publications-scholar-note a {
@@ -1305,6 +1311,17 @@ span.pub-title {
     line-height: 1.7;
     color: var(--text-main);
     opacity: 0.85;
+}
+
+.pi-blurb a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity var(--transition-fast);
+}
+
+.pi-blurb a:hover {
+    opacity: 0.75;
 }
 
 .pi-top {
@@ -1470,10 +1487,10 @@ span.pub-title {
 
 .talks-list {
     width: calc(100% - var(--page-padding));
-    max-width: 900px;
+    max-width: 1200px;
     margin: var(--section-gap) auto 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
 
@@ -1488,6 +1505,43 @@ span.pub-title {
     aspect-ratio: 16 / 9;
     border: none;
     display: block;
+}
+
+.talk-facade {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.talk-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: background var(--transition-fast);
+}
+
+.talk-facade:hover .talk-play-button {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.talk-play-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid white;
 }
 
 .talk-audio {
@@ -1684,7 +1738,7 @@ span.pub-title {
     padding: var(--section-spacing) 0 var(--section-spacing);
 }
 
-.join-section + .join-section {
+.join-section+.join-section {
     padding-top: 0;
 }
 

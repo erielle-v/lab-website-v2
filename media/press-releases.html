@@ -17,22 +17,12 @@
 
         <div class="navbar">
             <a href="../index.html">Home</a>
-
-            <div class="dropdown">
-                <a href="../projects/projects.html" class="nav-item has-dropdown">Projects</a>
-                <div class="dropdown-content">
-                    <a href="../projects/tishumap.html">TISHUMAP</a>
-                    <a href="../projects/aida.html">AIDA</a>
-                    <a href="../projects/pradict.html">PRADICT</a>
-                    <a href="../projects/virtual-cell.html">Building a Virtual Cell</a>
-                    <a href="../projects/human-cell-atlas.html">Human Cell Atlas</a>
-                </div>
-            </div>
+            <a href="../projects/projects.html">Projects</a>
 
             <div class="dropdown">
                 <a href="../resources/resources.html" class="nav-item has-dropdown">Resources</a>
                 <div class="dropdown-content">
-                    <a href="../resources/software.html">Software</a>
+                    <a href="../resources/algos.html">Algos</a>
                     <a href="../resources/s2gp-platform.html">S2GP Platform</a>
                     <a href="../resources/datasets-protocols.html">Datasets & Protocols</a>
                 </div>
@@ -53,7 +43,7 @@
             <a href="../join-us.html">Join Us!</a>
         </div>
 
-        <section class="software-section">
+        <section class="algos-section">
 
             <div id="press-releases-root"></div>
 
@@ -121,11 +111,11 @@
 
             const sectionsHTML = projectOrder.map(project => {
                 const entriesHTML = grouped[project].map(item => `
-                    <div class="software-entry">
-                        <h3 class="software-title">${item.title}</h3>
-                        <p class="software-description">${item.source}</p>
-                        <div class="software-links">
-                            <a class="software-link" href="${item.url}" target="_blank" rel="noopener noreferrer">Read Article</a>
+                    <div class="algos-entry">
+                        <h3 class="algos-title">${item.title}</h3>
+                        <p class="algos-description">${item.source}</p>
+                        <div class="algos-links">
+                            <a class="algos-link" href="${item.url}" target="_blank" rel="noopener noreferrer">Read Article</a>
                         </div>
                     </div>
                 `).join("");
@@ -136,7 +126,7 @@
                         <h2>${project}</h2>
                         <span class="divider-line"></span>
                     </div>
-                    <div class="software-list" style="margin: var(--section-gap) auto 0; max-width: 900px; width: calc(100% - var(--page-padding));">
+                    <div class="algos-list" style="margin: var(--section-gap) auto 0; max-width: 900px; width: calc(100% - var(--page-padding));">
                         ${entriesHTML}
                     </div>
                 `;

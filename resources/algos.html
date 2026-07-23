@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Cell Atlas</title>
+    <title>Algos</title>
     <link rel="stylesheet" href="../style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
@@ -17,24 +17,14 @@
 
         <div class="navbar">
             <a href="../index.html">Home</a>
+            <a href="../projects/projects.html">Projects</a>
 
             <div class="dropdown">
-                <a href="projects.html" class="nav-item has-dropdown active">Projects</a>
+                <a href="resources.html" class="nav-item has-dropdown active">Resources</a>
                 <div class="dropdown-content">
-                    <a href="tishumap.html">TISHUMAP</a>
-                    <a href="aida.html">AIDA</a>
-                    <a href="pradict.html">PRADICT</a>
-                    <a href="virtual-cell.html">Building a Virtual Cell</a>
-                    <a href="human-cell-atlas.html">Human Cell Atlas</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a href="../resources/resources.html" class="nav-item has-dropdown">Resources</a>
-                <div class="dropdown-content">
-                    <a href="../resources/software.html">Software</a>
-                    <a href="../resources/s2gp-platform.html">S2GP Platform</a>
-                    <a href="../resources/datasets-protocols.html">Datasets & Protocols</a>
+                    <a href="algos.html">Algos</a>
+                    <a href="s2gp-platform.html">S2GP Platform</a>
+                    <a href="datasets-protocols.html">Datasets & Protocols</a>
                 </div>
             </div>
 
@@ -53,20 +43,16 @@
             <a href="../join-us.html">Join Us!</a>
         </div>
 
-        <section class="join-section">
+        <section class="algos-section">
+
             <div class="section-divider">
                 <span class="divider-line"></span>
-                <h2>Human Cell Atlas</h2>
+                <h2>Algos</h2>
                 <span class="divider-line"></span>
             </div>
 
-            <div class="join-card">
-                <h3 class="card-heading">HCA (Human Cell Atlas)</h3>
+            <div id="algos-root"></div>
 
-                <p>
-                    Details coming soon!
-                </p>
-            </div>
         </section>
 
     </div>
@@ -110,6 +96,31 @@
         </p>
 
     </footer>
+
+    <script src="../js/algos-data.js"></script>
+    <script>
+        const algosRoot = document.getElementById("algos-root");
+
+        if (algosRoot && typeof algosData !== "undefined") {
+            const entriesHTML = algosData.map(sw => {
+                const linksHTML = sw.links.map(link =>
+                    `<a class="algos-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label}</a>`
+                ).join("");
+
+                return `
+                    <div class="algos-entry">
+                        <h3 class="algos-title">${sw.name}</h3>
+                        <p class="algos-description">${sw.description}</p>
+                        <div class="algos-links">
+                            ${linksHTML}
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            algosRoot.innerHTML = `<div class="algos-list">${entriesHTML}</div>`;
+        }
+    </script>
 
     <script src="../js/script.js"></script>
 </body>

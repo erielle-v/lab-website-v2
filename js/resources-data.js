@@ -12,10 +12,10 @@
 
 const resourcesData = [
     {
-        title: "Software",
+        title: "Algos",
         description: "Open-source computational tools developed by the lab for single-cell and spatial omics analysis.",
-        thumbnail: "../images/projects-and-resources/software.jpg",
-        page: "software.html"
+        thumbnail: "../images/projects-and-resources/algos.jpg",
+        page: "algos.html"
     },
     {
         title: "S2GP Platform",

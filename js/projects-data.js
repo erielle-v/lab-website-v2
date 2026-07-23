@@ -14,13 +14,13 @@ const projectsData = [
     {
         title: "TISHUMAP",
         description: "Spatial mapping of tissue architecture at single-cell resolution.",
-        thumbnail: "../images/projects-and-resources/tishumap.jpg",
+        thumbnail: "../images/projects-and-resources/tishumap.png",
         page: "tishumap.html"
     },
     {
         title: "AIDA",
         description: "A multi-national single-cell reference atlas of Asian immune cell diversity.",
-        thumbnail: "../images/projects-and-resources/aida.jpg",
+        thumbnail: "../images/projects-and-resources/aida.png",
         page: "aida.html"
     },
     {
@@ -30,15 +30,9 @@ const projectsData = [
         page: "pradict.html"
     },
     {
-        title: "Building a Virtual Cell",
+        title: "AI Models: Building Virtual Cells and Tissues",
         description: "Integrating multi-omics data to computationally model human cell behaviour.",
         thumbnail: "../images/projects-and-resources/virtual_cell.jpg",
-        page: "virtual-cell.html"
-    },
-    {
-        title: "Human Cell Atlas",
-        description: "Contributing single-cell genomics data to a global map of all human cell types.",
-        thumbnail: "../images/projects-and-resources/hca.jpg",
-        page: "human-cell-atlas.html"
-    },
+        page: "ai-models.html"
+    }
 ];
