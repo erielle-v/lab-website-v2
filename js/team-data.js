@@ -14,7 +14,7 @@ const teamMembers = [
   {
     name: "Grace Yeo",
     title: "Postdoctoral Fellow",
-    photo: "images/team/grace_yeo.png",
+    photo: "images/team/grace_yeo.jpg",
     github: "https://github.com/yhtgrace",
   },
   {
@@ -45,7 +45,7 @@ const teamMembers = [
   {
     name: "Reema Baskar",
     title: "Postdoctoral Fellow",
-    photo: "images/team/reema_baskar.png",
+    photo: "images/team/reema_baskar.jpg",
   },
   {
     name: "Shvetha Sankaran",
@@ -110,7 +110,7 @@ const teamMembers = [
   {
     name: "Prasanna Nori Venkatesh",
     title: "Senior Research Officer",
-    photo: "images/team/prasanna_nori_venkatesh.jpeg",
+    photo: "images/team/prasanna_nori_venkatesh.jpg",
   },
   {
     name: "Shu Qin Peng",
